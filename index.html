@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SIP N SAVOR — Coffee Shop</title>
+  <meta name="description" content="SIP N SAVOR — the place where authentic coffee is pushed to the boundaries of classic and modern." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- =================== NAVBAR =================== -->
+ <header class="site-header">
+  <nav class="nav container" aria-label="Primary">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation" />
+    <label for="nav-toggle" class="hamburger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links" role="list">
+      <li><a class="nav-link" href="index.html#home">Home</a></li>
+      <li><a class="nav-link" href="menu.html">Menu</a></li>
+      <li><a class="nav-link" href="index.html#about">About Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="cart-btn" class="cart-button" aria-label="Open cart" title="Cart">
+        <!-- cart icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M7 4h-2a1 1 0 1 0 0 2h1.28l1.6 8.03A3 3 0 0 0 10.84 17h6.78a1 1 0 1 0 0-2h-6.78a1 1 0 0 1-.98-.8L9.8 12h7.87a3 3 0 0 0 2.94-2.42l.89-4.45A1 1 0 0 0 20.52 4H7Z" fill="currentColor"/>
+        </svg>
+        <span class="cart-count" data-cart-count>0</span>
+      </button>
+      <a class="logo" href="index.html#home" aria-label="SIP N SAVOR home">
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="cup" x1="0" x2="1">
+                <stop offset="0%" stop-color="#6d4c41"/>
+                <stop offset="100%" stop-color="#3e2723"/>
+              </linearGradient>
+            </defs>
+            <path d="M10 22 h30 a2 2 0 0 1 2 2 v12 a12 12 0 0 1 -12 12 h-10 a12 12 0 0 1 -12 -12 v-12 a2 2 0 0 1 2 -2 z" fill="url(#cup)" />
+            <path d="M42 26 h6 a6 6 0 1 1 0 12 h-6" fill="none" stroke="#3e2723" stroke-width="3" stroke-linecap="round"/>
+            <path d="M22 10 c-2 4 2 6 0 10 M30 10 c-2 4 2 6 0 10 M26 12 c-2 4 2 6 0 10" fill="none" stroke="#a1887f" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-text">SIP N SAVOR</span>
+        </a>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <!-- =================== HERO =================== -->
+    <section id="home" class="hero">
+      <!-- Horizontal hero image with overlay (opacity) -->
+      <img
+        class="hero-bg"
+        src="images/herosection.jpg "
+        alt="Coffee ambiance hero image"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>SIP N SAVOR</h1>
+          <p class="tagline">“the place where authentic coffee is pushed to the boundaries of classic and modern”</p>
+
+          <!-- Google Map (responsive, rounded) -->
+          <div class="map-embed" aria-label="Location map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d682.5075313782319!2d121.10660973509499!3d14.60786827417637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b86b7f8835df%3A0x71d36d4206cf3c41!2sKarangalan%20Dr!5e0!3m2!1sen!2sph!4v1772955609453!5m2!1sen!2sph"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <ul class="contact" role="list">
+            <li><a href="tel:+639171234567" aria-label="Call us">📞 +63 917 123 4567</a></li>
+            <li><a href="mailto:hello@sipnsavor.ph" aria-label="Email us">✉️ hello@sipnsavor.ph</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== MENU =================== -->
+    <section id="menu" class="section menu">
+      <div class="container">
+        <h2>Menu</h2>
+        <p class="section-intro">A curated mix of classics and modern signatures.</p>
+
+        <div class="menu-grid">
+          <article class="card">
+            <h3>Espresso</h3>
+            <p>Rich and bold single shot to kickstart your day.</p>
+            <span class="price">₱120</span>
+          </article>
+          <article class="card">
+            <h3>Cappuccino</h3>
+            <p>Perfect balance of espresso, milk, and foam.</p>
+            <span class="price">₱160</span>
+          </article>
+          <article class="card">
+            <h3>Iced Latte</h3>
+            <p>Silky-smooth over ice with a subtle sweetness.</p>
+            <span class="price">₱170</span>
+          </article>
+          <article class="card">
+            <h3>Pour-over</h3>
+            <p>Clean cup highlighting origin character.</p>
+            <span class="price">₱180</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== ABOUT =================== -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          At <strong>SIP N SAVOR</strong>, we explore coffee at the intersection of
+          <em>classic craftsmanship</em> and <em>modern innovation</em>—from
+          thoughtfully sourced beans to precise brewing methods.
+        </p>
+
+        <!-- ⬇️ Carousel moved here; contained within About's space -->
+        <div class="carousel about-carousel" aria-label="Product carousel">
+          <!-- Radio buttons control which slide is visible (pure CSS) -->
+          <input type="radio" name="about-carousel" id="ac1" checked aria-hidden="true" />
+          <input type="radio" name="about-carousel" id="ac2" aria-hidden="true" />
+          <input type="radio" name="about-carousel" id="ac3" aria-hidden="true" />
+
+          <div class="slides" aria-live="polite">
+            <figure class="slide s1">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Classic espresso cup" />
+              <figcaption>Classic Espresso</figcaption>
+            </figure>
+
+            <figure class="slide s2">
+              <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="Iced latte in a tall glass" />
+              <figcaption>Iced Latte</figcaption>
+            </figure>
+
+            <figure class="slide s3">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" alt="Pour-over coffee setup" />
+              <figcaption>Pour-over Special</figcaption>
+            </figure>
+          </div>
+
+          <!-- Dots / Controls -->
+          <div class="controls" aria-label="Carousel controls">
+            <label for="ac1" aria-label="Show slide 1"></label>
+            <label for="ac2" aria-label="Show slide 2"></label>
+            <label for="ac3" aria-label="Show slide 3"></label>
+          </div>
+        </div>
+        <!-- ⬆️ End moved carousel -->
+      </div>
+    </section>
+
+    <!-- =================== REVIEWS =================== -->
+    <section id="reviews" class="section reviews">
+      <div class="container">
+        <h2>Customer Reviews</h2>
+
+        <div class="reviews-grid">
+          <blockquote class="review">
+            <p>“Best espresso I’ve had in the city—perfect crema and depth.”</p>
+            <footer>— Ana M.</footer>
+          </blockquote>
+
+          <blockquote class="review">
+            <p>“Love the modern twists. The pour-over flight is a must-try!”</p>
+            <footer>— Carlo R.</footer>
+          </blockquote>
+
+          <blockquote class="review">
+            <p>“Cozy space, friendly baristas, and a menu that keeps evolving.”</p>
+            <footer>— Jamie T.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================== FOOTER & LETTER FEEDBACK =================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <h2>Recommendations & Feedback</h2>
+      <p class="section-intro">Write us a letter—tell us what you’d love to sip next.</p>
+
+      <!-- Letter-styled form -->
+      <form class="feedback-form" action="#" method="post" novalidate>
+        <div class="row">
+          <label>
+            Your Name
+            <input type="text" name="name" placeholder="e.g., Elmo Moses Gungon" required />
+          </label>
+          <label>
+            Your Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+        </div>
+
+        <label class="full">
+          Your Letter or Message
+          <textarea name="message" rows="6" placeholder="Write your recommendations or feedback..." required></textarea>
+        </label>
+
+        <button type="submit" class="btn">Send Letter</button>
+      </form>
+
+      <p class="legal">© <span id="year"></span> SIP N SAVOR. All rights reserved.</p>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+  <!-- CART DRAWER & MODALS -->
+<aside id="cart-container" class="cart-container" aria-hidden="true" aria-label="Shopping cart">
+  <div class="cart-title">
+    <span>Cart Items</span>
+    <button id="cart-close" class="icon-btn" aria-label="Close cart">×</button>
+  </div>
+  <div id="cart-content" class="cart-content" role="region" aria-live="polite"></div>
+  <div class="total"><div>Total</div><div class="total-price">₱0</div></div>
+  <button id="cart-order-btn" class="btn btn-primary">Order Now</button>
+</aside>
+
+<!-- Product Detail Modal -->
+<div id="product-detail-modal" class="modal-backdrop" data-modal="product" hidden>
+  <div class="modal-box">
+    <img id="detail-img" alt="" />
+    <div class="modal-body">
+      <h3 id="detail-title"></h3>
+      <p id="detail-desc"></p>
+      <p><b id="popup-price">₱0</b></p>
+      <div id="flavor-section" class="form-row" hidden>
+        <label for="flavor-select">Select Flavor:</label>
+        <select id="flavor-select"></select>
+      </div>
+      <div class="modal-actions">
+        <button id="popup-add-cart" class="btn btn-primary">Add to Cart</button>
+        <button id="popup-order" class="btn btn-success">Order Now</button>
+        <button id="detail-close" class="btn btn-danger">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div id="payment-modal" class="modal-backdrop" data-modal="payment" hidden>
+  <div class="modal-box narrow">
+    <h4>Checkout</h4>
+    <input id="cust-name" class="form-input" placeholder="Full Name" />
+    <input id="cust-phone" class="form-input" placeholder="Phone Number" />
+    <input id="cust-address" class="form-input" placeholder="Delivery Address" />
+    <label class="form-label">Payment Method</label>
+    <select id="paymethod" class="form-input">
+      <option value="">Select Payment</option>
+      <option>GCash</option>
+      <option>PayPal</option>
+      <option>PayMaya</option>
+      <option>BDO</option>
+      <option>BPI</option>
+    </select>
+    <input id="cust-account" class="form-input" placeholder="Account / Number" />
+    <div id="loader" class="loader" hidden></div>
+    <div id="payment-msg" class="payment-msg" hidden>Payment Successful! Order Confirmed</div>
+    <div class="modal-actions">
+      <button id="confirm-payment" class="btn btn-success">Confirm Payment</button>
+      <button id="close-payment" class="btn btn-danger">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Receipt Modal -->
+<div id="receipt-modal" class="modal-backdrop" data-modal="receipt" hidden>
+  <div class="modal-box narrow">
+    <h4>Order Receipt</h4>
+    <div id="receipt-content" class="receipt-paper"></div>
+    <div class="modal-actions">
+      <button id="close-receipt" class="btn btn-primary">Close</button>
+    </div>
+  </div>
+</div>
+<script src="cart.js"></script>
+</body>
+</html>
